@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.XUnit\\RoundTheCode.AzureTestProject.XUnit.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj",
+        "projectName": "RoundTheCode.AzureTestProject.Shared",
+        "projectPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj",
+        "packagesPath": "C:\\Users\\Shailaja Raju\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shailaja Raju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net60": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net60": {
+          "targetAlias": "net6.0",
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.XUnit\\RoundTheCode.AzureTestProject.XUnit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.XUnit\\RoundTheCode.AzureTestProject.XUnit.csproj",
+        "projectName": "RoundTheCode.AzureTestProject.XUnit",
+        "projectPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.XUnit\\RoundTheCode.AzureTestProject.XUnit.csproj",
+        "packagesPath": "C:\\Users\\Shailaja Raju\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.XUnit\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shailaja Raju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net60": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj": {
+                "projectPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net60": {
+          "targetAlias": "net6.0",
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

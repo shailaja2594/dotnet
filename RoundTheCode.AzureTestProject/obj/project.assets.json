@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v6.0": {
+      "RoundTheCode.AzureTestProject.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0"
+      }
+    },
+    ".NETFramework,Version=v6.0/win7-x86": {
+      "RoundTheCode.AzureTestProject.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v6.0"
+      }
+    }
+  },
+  "libraries": {
+    "RoundTheCode.AzureTestProject.Shared/1.0.0": {
+      "type": "project",
+      "path": "../RoundTheCode.AzureTestProject.Shared/RoundTheCode.AzureTestProject.Shared.csproj",
+      "msbuildProject": "../RoundTheCode.AzureTestProject.Shared/RoundTheCode.AzureTestProject.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v6.0": [
+      "RoundTheCode.AzureTestProject.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Shailaja Raju\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject\\RoundTheCode.AzureTestProject.csproj",
+      "projectName": "RoundTheCode.AzureTestProject",
+      "projectPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject\\RoundTheCode.AzureTestProject.csproj",
+      "packagesPath": "C:\\Users\\Shailaja Raju\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Shailaja Raju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net60": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj": {
+              "projectPath": "C:\\Users\\Shailaja Raju\\Desktop\\AzureTestProject-main\\RoundTheCode.AzureTestProject.Shared\\RoundTheCode.AzureTestProject.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net60": {
+        "targetAlias": "net6.0",
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.426\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}
