@@ -31,7 +31,6 @@ jobs:
       runOnce:
         steps:
           - checkout: none
-
           - download: 'buildPipeline'
             name: 'DownloadBuildArtifacts'
             displayName: 'Download Build Artifacts'
