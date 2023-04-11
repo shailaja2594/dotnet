@@ -25,7 +25,7 @@ stages:
 
 jobs:
   - deployment: DeployWebsite
-    displayName: "Deploy Website"
+    displayName: "Deploy WWebsite"
     environment: 'admin'
     strategy:
       runOnce:
