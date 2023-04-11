@@ -25,40 +25,38 @@ stages:
 
 jobs:
   - deployment: DeployWebsite
-    displayName: "Deploy WWebsite"
+    displayName: "Deploy Website"
     environment: 'admin'
     strategy:
       runOnce:
-        deploy:
-          steps:
-            - checkout: none
+        steps:
+          - checkout: none
 
-            - download: 'buildPipeline'
-              name: 'DownloadBuildArtifacts'
-              displayName: 'Download Build Artifacts'
-              artifact: 'AzureTestProject'
+          - download: 'buildPipeline'
+            name: 'DownloadBuildArtifacts'
+            displayName: 'Download Build Artifacts'
+            artifact: 'AzureTestProject'
 
-            - task: IISWebAppManagementOnMachineGroup@0
-              name: 'StopIIS'
-              displayName: 'Stop IIS website'
-              inputs:
-                IISDeploymentType: 'IISWebsite'
-                ActionIISWebsite: 'StopWebsite'
-                StartStopWebsiteName: '${{ variables.IISWebsiteName }}'
+          - task: IISWebAppManagementOnMachineGroup@0
+            name: 'StopIIS'
+            displayName: 'Stop IIS website'
+            inputs:
+              IISDeploymentType: 'IISWebsite'
+              ActionIISWebsite: 'StopWebsite'
+              StartStopWebsiteName: '${{ variables.IISWebsiteName }}'
 
-            - task: IISWebAppDeploymentOnMachineGroup@0
-              name: 'DeployIIS'
-              displayName: 'Deploy IIS website'
-              inputs:
-                WebSiteName: '${{ variables.IISWebsiteName }}'
-                Package: '$(Pipeline.Workspace)\build\Pipeline\AzureTestProject\RoundTheCode.AzureTestProject'
-                TakeAppOfflineFlag: true
+          - task: IISWebAppDeploymentOnMachineGroup@0
+            name: 'DeployIIS'
+            displayName: 'Deploy IIS website'
+            inputs:
+              WebSiteName: '${{ variables.IISWebsiteName }}'
+              Package: '$(Pipeline.Workspace)\build\Pipeline\AzureTestProject\RoundTheCode.AzureTestProject'
+              TakeAppOfflineFlag: true
 
-            - task: IISWebAppManagementOnMachineGroup@0
-              name: 'StartIIS'
-              displayName: 'Start IIS website'
-              inputs:
-                IISDeploymentType: 'IISWebsite'
-                ActionIISWebsite: 'StartWebsite'
-                StartStopWebsiteName: '${{ variables.IISWebsiteName }}'
-
+          - task: IISWebAppManagementOnMachineGroup@0
+            name: 'StartIIS'
+            displayName: 'Start IIS website'
+            inputs:
+              IISDeploymentType: 'IISWebsite'
+              ActionIISWebsite: 'StartWebsite'
+              StartStopWebsiteName: '${{ variables.IISWebsiteName }}'
